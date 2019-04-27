@@ -1,4 +1,1 @@
-# GameChanger
-Power Platform and Cortana
-
-![cover](./cover.png "cover")
+![cover](https://github.com/hfleitas/GameChanger/blob/master/Cover.png "cover")
