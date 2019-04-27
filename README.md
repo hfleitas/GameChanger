@@ -1,4 +1,4 @@
 # GameChanger
 Power Platform and Cortana
 
-![cover](./cover.png "cover")
+![cover](cover.png "cover")
