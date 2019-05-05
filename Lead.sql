@@ -196,3 +196,41 @@ as
 	end catch
 go
 exec DeleteLead 'Jackie','hr@icloud.com';
+
+--Creds
+--Win Auth
+use master
+go
+if suser_sid('FleitasArts\Leads') is null
+begin 
+    create login [FleitasArts\Leads] from windows with default_database = [tempdb];        
+end
+use FleitasArts
+go
+if user_id('FleitasArts\Leads') is null 
+begin
+    create user [FleitasArts\Leads] for login [FleitasArts\Leads];
+end 
+alter role [db_datareader] add member [FleitasArts\Leads];
+grant execute to [FleitasArts\Leads];
+go
+
+--SQL Auth
+use master
+go
+if suser_id('Leads') is null 
+begin 
+    create login [Leads] with password = N'redacted', 
+        default_database = [tempdb],
+        check_expiration = off,
+        check_policy = off;
+end
+use FleitasArts
+go
+if user_id('Leads') is null
+begin
+    create user Leads for login Leads;
+end 
+alter role [db_datareader] add member [Leads];
+grant execute to Leads;
+go
