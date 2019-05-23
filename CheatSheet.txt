@@ -1,0 +1,42 @@
+CHECK
+exec CheckLead @email='dmoney@icloud.com';
+exec CheckLead @email='wakeboard@live.com';
+exec CheckLead @email='hr@icloud.com';
+
+LINK
+Tony
+wakeboard@live.com
+1002
+
+DELETE
+Jackie
+hr@icloud.com
+
+ADD
+Ryan
+ryan@outlook.com
+750 Lake Dr, Boca Raton, FL 33432
+
+ADDED DATA
+Customers
+ ('Don',	'dmoney@icloud.com'	)
+,('Lou',	'sweetlou@gmail.com')
+,('Jackie',	'hr@icloud.com'		)
+
+CustomerAccounts
+ (1, 9256)
+,(2, 7146)
+,(3, 6401)
+
+Leads
+ ('Don', 'dmoney@icloud.com', '501 S Ocean Blvd, Palm Beach, FL 33480', 0, suser_name(), getdate(), null,null) --'561-805-9256', 'condo', 'seasonal', 'rent out', 
+,('Tony', 'wakeboard@live.com', '401 E 65th St, Hialeah, FL 33013', 0, suser_name(), getdate(), null,null) --'786-381-4056', 'house', 'owner', 'live', 
+,('Jackie', 'hr@icloud.com', '401 E 65th St, Hialeah, FL 33013', 0, suser_name(), getdate(), null,null) 
+
+,('Kim', 'ciokim@icloud.com', '700 Lake Dr, Boca Raton, FL 33432', 0, suser_name(), getdate(), null,null)
+,('Fabina',	'fabi@aol.com', '215 SE Spanish Trl, Boca Raton, FL 33432', 0, suser_name(), getdate(), null,null)
+,('Christina', 'csosa@live.com', '13 Sunset Key Dr, Key West, FL 33040', 0, suser_name(), getdate(), null,null)
+
+Tickets
+ (1, 9256, 0, 1001, suser_name(), getdate(), null, null)
+,(3, 6401, 0, 1003, suser_name(), getdate(), null, null)
