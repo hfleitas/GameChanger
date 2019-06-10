@@ -14,5 +14,5 @@
 11. [Webinar Listing](https://docs.microsoft.com/powerapps/maker/canvas-apps/webinars-listing)
 12. [ROI Case Study](https://go.microsoft.com/fwlink/?LinkId=2005303&clcid=0x409)
 13. [AI Builder](https://docs.microsoft.com/ai-builder/overview) (*new)
-14. [MBAS 2019 Keynote](https://www.microsoft.com/en-us/businessapplicationssummit) (*new)
-15. [June 2019 Feature Summary](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-june-2019-feature-summary/)
+14. [MBAS 2019 Keynote](https://www.microsoft.com/businessapplicationssummit) (*new)
+15. [PBI Desktop - June 2019 Feature Summary](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/) (*new)
